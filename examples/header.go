@@ -1,11 +1,10 @@
 package main
 
 import (
+	"golang-toast-11/toast"
 	"log"
 	"os"
 )
-
-import "../toast"
 
 func main() {
 	base, _ := os.Getwd()

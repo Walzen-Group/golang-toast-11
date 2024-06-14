@@ -3,7 +3,6 @@ package toast
 import (
 	"bytes"
 	"errors"
-	"fmt"
 	"io/ioutil"
 	"os"
 	"os/exec"
@@ -11,8 +10,9 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/nu7hatch/gouuid"
 	"syscall"
+
+	uuid "github.com/nu7hatch/gouuid"
 )
 
 var toastTemplate *template.Template
@@ -324,7 +324,7 @@ func (n *Notification) buildXML() (string, error) {
 func (n *Notification) Push() error {
 	n.applyDefaults()
 	xml, err := n.buildXML()
-	fmt.Println("XML:" + xml)
+	// fmt.Println("XML:" + xml)
 	if err != nil {
 		return err
 	}

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"../toast"
+	"golang-toast-11/toast"
 	"log"
 	"os"
 )
