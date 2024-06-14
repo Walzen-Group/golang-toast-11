@@ -1,4 +1,4 @@
-module toast
+module github.com/Walzen-Group/golang-toast-11
 
 go 1.22.0
 

@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"toast"
+	toast "github.com/Walzen-Group/golang-toast-11"
 
 	"gopkg.in/urfave/cli.v1"
 )
