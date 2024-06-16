@@ -82,6 +82,9 @@ $template = @"
             {{if .Icon}}
             <image placement="appLogoOverride" src="{{.Icon}}" />
             {{end}}
+			{{if .AttributionIcon}}
+            <image placement="attribution" src="{{.AttributionIcon}}" />
+			{{end}}
             {{if .Title}}
             <text><![CDATA[{{.Title}}]]></text>
             {{end}}
@@ -194,6 +197,9 @@ type Notification struct {
 
 	// An optional progress bar to display on the toast
 	ProgressBar ProgressBar
+
+	// An optional path to an in icon to be displayed as the application icon
+	AttributionIcon string
 
 	// An optional text to display at the bottom of the notification
 	Attribution string
